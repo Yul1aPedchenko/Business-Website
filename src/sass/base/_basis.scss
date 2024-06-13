@@ -1,0 +1,18 @@
+html {
+  scroll-behavior: smooth;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+a {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
