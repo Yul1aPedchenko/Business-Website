@@ -6,13 +6,50 @@ html {
 ::before {
   box-sizing: border-box;
 }
-
 a {
   cursor: pointer;
 }
-
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+body {
+  background-color: getColor('grey08');
+  font-family: 'Urbanist', sans-serif;
+  font-size: 14px;
+}
+.container {
+  max-width: 390px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+    padding-left: 162px;
+    padding-right: 162px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section {
+    max-width: 390px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
