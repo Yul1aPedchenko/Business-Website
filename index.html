@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Real Estate Business Website UI Template - Dark Theme | Produce UI" />
+    <meta
+      name="description"
+      content="Real Estate Business Website UI Template - Dark Theme | Produce UI"
+    />
     <title>Business-Website</title>
     <link
       rel="stylesheet"
@@ -13,58 +16,95 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     
     <script type="module" crossorigin src="/Business-Website/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Business-Website/assets/index-e861fccb.css">
+    <link rel="stylesheet" href="/Business-Website/assets/index-8f06f707.css">
   </head>
   <body>
-    <section class="vite-promo">
+    <header class="header">
   <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
+    <div class="header__menu-wrap">
+      <a href="index.html" class="header__menu-logo">
+        <svg class="header__menu-logo-icon">
+          <use href="../img/home-defs.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="menu__burger-icon" width="40" height="40">
+          <use href="../img/home-defs.svg#icon-menu"></use>
+        </svg>
+      </button>
+    </div>
+    <a href="../index.html" class="header__logo">
+      <svg class="header__logo-icon">
+        <use href="../img/home-defs.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="header__item">
+          <a href="#" class="header__link">Home</a>
         </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
+        <li class="header__item">
+          <a href="#" class="header__link">About Us</a>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">Properties</a>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">Services</a>
         </li>
       </ul>
-    </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="./img/vite-logo.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
+    </nav>
+    <a href="#" class="header__btn">Contact Us</a>
   </div>
-</section>
+</header>
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu">
+    <svg class="mobile-menu__icon-close" width="40" height="40">
+      <use href="../img/home-defs.svg#icon-close"></use>
+    </svg>
+  </button>
+  <a href="../index.html" class="menu__logo">
+    <svg class="menu__logo-icon">
+      <use href="../img/home-defs.svg#icon-logo"></use>
+    </svg>
+  </a>
+  <nav class="menu__nav">
+    <ul class="menu__list">
+      <li class="menu__item">
+        <a href="#" class="menu__link">Home</a>
+      </li>
+      <li class="menu__item">
+        <a href="#" class="menu__link">About Us</a>
+      </li>
+      <li class="menu__item">
+        <a href="#" class="menu__link">Properties</a>
+      </li>
+      <li class="menu__item">
+        <a href="#" class="menu__link">Services</a>
+      </li>
+    </ul>
+  </nav>
+  <a href="#" class="menu__btn">Contact Us</a>
+</div>
 
+    
+    
+    
+    
+    
+    
 
     
   </body>
