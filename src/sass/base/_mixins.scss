@@ -1,0 +1,15 @@
+@mixin header__btn() {
+  background-color: getColor('grey08');
+  color: getColor('white');
+  border: 1px solid getColor('grey15');
+  border-radius: 8px;
+  padding: 14px 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+  &:hover {
+    background-color: getColor('white');
+    color: getColor('grey08');
+  }
+}
