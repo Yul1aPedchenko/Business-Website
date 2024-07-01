@@ -1,8 +1,8 @@
 <header class="header">
   <div class="container">
-    <div class="header__menu-wrap">
-      <a href="index.html" class="header__menu-logo">
-        <svg class="header__menu-logo-icon">
+    <div class="header__wrap">
+      <a href="../index.html" class="header__logo">
+        <svg class="header__logo-icon">
           <use href="./img/home-defs.svg#icon-logo"></use>
         </svg>
       </a>
@@ -10,48 +10,47 @@
         class="menu-toggle js-open-menu"
         aria-expanded="false"
         aria-controls="mobile-menu"
+        width="28"
+        height="28"
       >
-        <svg class="menu__burger-icon" width="40" height="40">
+        <svg class="menu__burger-icon" width="28" height="28">
           <use href="./img/home-defs.svg#icon-menu"></use>
         </svg>
       </button>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#" class="header__link header__link--active">Home</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">About Us</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Properties</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Services</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#" class="header__btn">Contact Us</a>
     </div>
-    <a href="../index.html" class="header__logo">
-      <svg class="header__logo-icon">
-        <use href="./img/home-defs.svg#icon-logo"></use>
-      </svg>
-    </a>
-    <nav class="header__nav">
-      <ul class="header__list">
-        <li class="header__item">
-          <a href="#" class="header__link">Home</a>
-        </li>
-        <li class="header__item">
-          <a href="#" class="header__link">About Us</a>
-        </li>
-        <li class="header__item">
-          <a href="#" class="header__link">Properties</a>
-        </li>
-        <li class="header__item">
-          <a href="#" class="header__link">Services</a>
-        </li>
-      </ul>
-    </nav>
-    <a href="#" class="header__btn">Contact Us</a>
   </div>
 </header>
 <div class="menu-container js-menu-container" id="mobile-menu">
-  <button class="menu-toggle js-close-menu">
-    <svg class="mobile-menu__icon-close" width="40" height="40">
-      <use href="./img/home-defs.svg#icon-close"></use>
-    </svg>
-  </button>
-  <a href="../index.html" class="menu__logo">
-    <svg class="menu__logo-icon">
-      <use href="./img/home-defs.svg#icon-logo"></use>
-    </svg>
-  </a>
-  <nav class="menu__nav">
+  <div class="menu__wrap">
+    <a href="../index.html" class="menu__logo">
+      <svg class="menu__logo-icon">
+        <use href="./img/home-defs.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <button class="menu-toggle js-close-menu">
+      <svg class="menu__icon-close" width="40" height="40">
+        <use href="./img/home-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="menu__nav">
     <ul class="menu__list">
       <li class="menu__item">
         <a href="#" class="menu__link">Home</a>
@@ -65,7 +64,10 @@
       <li class="menu__item">
         <a href="#" class="menu__link">Services</a>
       </li>
+      <li class="menu__item">
+        <a href="#" class="menu__link menu__btn">Contact Us</a>
+      </li>
     </ul>
-  </nav>
-  <a href="#" class="menu__btn">Contact Us</a>
+  </div>
+  <!-- <a href="#" class="menu__btn" aria-label="button menu">Contact Us</a> -->
 </div>
