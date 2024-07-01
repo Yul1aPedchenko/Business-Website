@@ -72,6 +72,10 @@
   padding: 0;
   .menu__burger-icon {
     fill: getColor('white');
+    transition: fill 250ms ease-in-out;
+    &:hover {
+      fill: getColor('grey60');
+    }
   }
 }
 .menu__wrap {
@@ -91,6 +95,11 @@
   width: 24px;
   height: 24px;
   background-color: transparent;
+  stroke: getColor('white');
+  transition: stroke 250ms ease-in-out;
+  &:hover {
+      stroke: getColor('grey60');
+    }
 }
 .menu__item:not(:last-child) {
   margin-bottom: 20px;
@@ -142,8 +151,8 @@
       height: 48px;
     }
     &__item:not(:last-child) {
-    margin-right: 30px;
-  }
+      margin-right: 30px;
+    }
     &__link {
       font-size: 18px;
     }
