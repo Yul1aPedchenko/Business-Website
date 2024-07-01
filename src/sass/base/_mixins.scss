@@ -7,10 +7,10 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 150%;
-  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out, border 250ms ease-in-out;
   &:hover {
-    background-color: getColor('white');
-    color: getColor('grey08');
+    background-color: getColor('grey15');
+    border: 1px solid getColor('grey08');
   }
   @media screen and (min-width: 1920px) {
     font-size: 18px;
