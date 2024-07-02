@@ -35,10 +35,10 @@
     border-radius: 8px;
     padding: 12px 20px;
     background-color: getColor('grey08');
-    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+    transition: background-color 250ms ease-in-out, border 250ms ease-in-out;
     &:hover {
-      background-color: getColor('white');
-      color: getColor('grey08');
+      background-color: getColor('grey15');
+      border: 1px solid getColor('grey08');
     }
   }
   &__btn {
