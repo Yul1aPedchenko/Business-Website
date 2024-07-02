@@ -92,6 +92,9 @@
       background-color: getColor('grey15');
       border: 1px solid getColor('grey08');
     }
+    .hero__icon-arrow {
+      transform: rotate(180deg);
+    }
   }
   &__circle-bg {
     position: relative;
@@ -125,6 +128,8 @@
   &__icon-arrow {
     width: 22px;
     height: 22px;
+    stroke: getColor('white');
+    transition: transform 250ms ease-in-out;
   }
 }
 @media screen and (min-width: 768px) {
