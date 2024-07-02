@@ -21,6 +21,7 @@ body {
 }
 .container {
   max-width: 390px;
+  min-width: 390px;
   padding-left: 16px;
   padding-right: 16px;
   margin: 0 auto;
@@ -49,7 +50,9 @@ body {
 @media screen and (max-width: 767px) {
   .subcontainer {
     max-width: 390px;
+    min-width: 390px;
     padding-left: 16px;
     padding-right: 16px;
+    margin: 0 auto;
   }
 }
