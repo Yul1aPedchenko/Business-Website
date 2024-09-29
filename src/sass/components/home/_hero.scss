@@ -36,12 +36,8 @@
     }
   }
   &__btn-item:last-child > .hero__btn {
-    background-color: getColor('purple60');
-    border: 1px solid getColor('purple60');
     margin-bottom: 40px;
-    &:hover {
-      background-color: getColor('grey08');
-    }
+    @include accentBtn();
   }
   &__btn {
     width: 100%;

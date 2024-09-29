@@ -14,10 +14,14 @@ img {
   max-width: 100%;
   height: auto;
 }
+button {
+  cursor: pointer;
+}
 body {
   background-color: getColor('grey08');
   font-family: 'Urbanist', sans-serif;
   font-size: 14px;
+  line-height: 150%;
 }
 .container {
   max-width: 390px;

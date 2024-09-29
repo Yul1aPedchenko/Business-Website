@@ -29,7 +29,6 @@
   &__link {
     color: getColor('white');
     font-weight: 500;
-    line-height: 150%;
     transition: color 250ms ease-in-out;
     &:hover {
       color: getColor('grey60');
