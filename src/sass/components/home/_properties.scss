@@ -1,14 +1,75 @@
 .properties {
+  &__stars-icon {
+    width: 45px;
+    height: 20px;
+  }
+  &__text-wrap {
+    margin-bottom: 40px;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 28px;
+    color: getColor('white');
+    margin-bottom: 6px;
+  }
+  &__text {
+    font-weight: 500;
+    color: getColor('grey60');
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+  }
+  &__btn {
+    @include simpleBtn();
+  }
 }
 .properties-card {
-    &__sublist {
-        display: flex;
-        align-items: center;
-    }
+  &__list {
+    padding-bottom: 30px;
+    border-bottom: 1px solid getColor('grey15');
+    margin-bottom: 16px;
+  }
+  &__item {
+    border: 1px solid getColor('grey15');
+    border-radius: 12px;
+    padding: 22px;
+  }
+  &__img {
+    margin-bottom: 16px;
+    height: 210px;
+    width: 100%;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    color: getColor('white');
+    margin-bottom: 2px;
+  }
+  &__description {
+    font-weight: 500;
+    color: getColor('grey60');
+    margin-bottom: 20px;
+  }
+  &__btn {
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: getColor('white');
+  }
+  &__sublist {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 6px;
+  }
   &__subitem {
     display: flex;
     align-items: center;
-    padding: 9.5px 14px;
+    padding: 6.5px 12px;
     background-color: getColor('grey10');
     border: 1px solid getColor('grey15');
     border-radius: 28px;
@@ -16,8 +77,6 @@
   &__amenities {
     color: getColor('white');
     font-weight: 500;
-    font-size: 18px;
-    line-height: 150%;
   }
   &__icon {
     width: 24px;
@@ -25,4 +84,68 @@
     fill: getColor('white');
     margin-right: 4px;
   }
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__caption {
+    font-weight: 500;
+    color: getColor('grey60');
+  }
+  &__price {
+    font-weight: 600;
+    font-size: 18px;
+    color: getColor('white');
+  }
+  &__details-btn {
+    @include accentBtn();
+  }
+}
+.properties-slider {
+  &__wrap {
+    display: flex;
+    align-items: center;
+  }
+  &__text {
+    font-weight: 500;
+    color: getColor('grey60');
+    margin: 0 10px;
+  }
+  &__span {
+    color: getColor('white');
+  }
+  &__btn {
+    border: 1px solid getColor('grey15');
+    border-radius: 69px;
+    width: 44px;
+    height: 44px;
+    background-color: getColor('grey10');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms ease-in-out;
+    fill: getColor('white');
+  }
+  &__btn:hover {
+    background-color: transparent;
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+.properties-slider__btn:disabled {
+  background-color: transparent;
+  fill: getColor('grey50');
+}
+#prevBtn {
+  rotate: 180deg;
+  order: -1;
+}
+.properties-card__item {
+  display: none;
+}
+.properties-card__item.active {
+  display: block;
 }
